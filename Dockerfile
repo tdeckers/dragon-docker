@@ -12,7 +12,7 @@ ADD ./files/supervisord.conf /etc/supervisor/supervisord.conf
 ADD ./files/dragonproxy.conf /etc/supervisor/conf.d/dragonproxy.conf
 ADD ./files/config.properties /opt/config.properties
 
-EXPOSE 9001
+#EXPOSE 9001
 EXPOSE 19132
 
 CMD ["/usr/bin/supervisord"]
