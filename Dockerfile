@@ -15,4 +15,6 @@ ADD ./files/config.properties /opt/config.properties
 #EXPOSE 9001
 EXPOSE 19132
 
+WORKDIR /opt
+
 CMD ["/usr/bin/supervisord"]
