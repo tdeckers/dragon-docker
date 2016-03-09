@@ -10,7 +10,7 @@ RUN wget $JAR_FILE -O /opt/dragonproxy.jar
 
 ADD ./files/supervisord.conf /etc/supervisor/supervisord.conf
 ADD ./files/dragonproxy.conf /etc/supervisor/conf.d/dragonproxy.conf
-ADD ./files/config.properties /opt/config.properties
+ADD ./files/config.yml /opt/config.yml
 
 #EXPOSE 9001
 EXPOSE 19132
